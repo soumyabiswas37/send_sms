@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  vars_files:
+    - sms_vars.yml
+  tasks:
+    - name: "Send SMS with Twilio"
+      community.general.twilio:
+        account_sid: "{{ account_sid }}"
+        auth_token: "{{ auth_token }}"
+        from_number: "{{ from_number }}"
+        to_numbers: "{{ to_numbers }}"
+        msg: "This is a test message.... Happy new Year 2024"
