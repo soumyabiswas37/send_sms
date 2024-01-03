@@ -1,4 +1,3 @@
-# send_sms
 🌐 Send SMS with the help of Ansible 🌐
 
 Introduction:
